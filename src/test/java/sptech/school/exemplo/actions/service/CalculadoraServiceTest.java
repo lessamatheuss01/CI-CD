@@ -11,7 +11,7 @@ class CalculadoraServiceTest {
     public void testDividir(){
         CalculadoraService calculadoraService = new CalculadoraService();
         double a = 10;
-        double b = 9;
+        double b = 2;
         double esperado = 5;
 
         double resultado = calculadoraService.dividir(a, b);
