@@ -1,10 +1,10 @@
 FROM maven:3-openjdk-17 as builder
-LABEL authors="Matheus"
+LABEL authors="brito"
 
 WORKDIR /build
 COPY . .
 
-RUN mvn clean package -DskipTests - Dcheckstyle.skip=true
+RUN mvn clean package -DskipTests -Dcheckstyle.skip=true
 
 FROM openjdk:17-jdk-slim
 
